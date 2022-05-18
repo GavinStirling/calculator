@@ -1,15 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// Base styles
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/// Resetting the page defaults
+@use "./reset";
 
-.title {
-    font-size: 5em;
-}
+/// Setting the default style of the web page
+@use "./base/body";
+
+// Layouts
+
+/// Setting the style for the title
+@use "./layouts/title";
+
+/// Setting the style for the work and results area
+@use "./layouts/workarea";
+
+/// Setting the style for the operator selectors
+@use "./layouts/operators";
+
+/// Setting the style for the number selectors
+@use "./layouts/numbers";
