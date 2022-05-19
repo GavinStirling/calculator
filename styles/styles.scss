@@ -9,13 +9,15 @@
 // LAYOUTS
 
 // Setting the style for the title
-@use "./layouts/title";
+@use "./layouts/header";
 
 // Setting the style for the work and results area
 @use "./layouts/workarea";
 
 // Setting the style for the operator selectors
 @use "./layouts/operators";
+@use "./components/operator";
 
-// Setting the style for the number selectors
+// Setting the styles for the number selectors
 @use "./layouts/numbers";
+@use "./components/number";

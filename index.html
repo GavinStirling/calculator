@@ -7,13 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gavin's Calculator</title>
 
+    <!-- Link to the main style sheet 'styles.css' -->
+
     <link rel="stylesheet" href="./styles/styles.css">
 
 </head>
 
 <body>
 
-    <header class="title">Gavin's Calculator</header>
+    <header class="header">
+        <h1 class="header__title">Gavin's Calculator</h1>
+    </header>
 
     <div class="workarea">
         <div class="workarea__results">
@@ -23,29 +27,31 @@
     </div>
 
     <div class="operators">
-        <p class="operators__operator plus">+</p>
-        <p class="operators__operator minus">-</p>
-        <p class="operators__operator multiply">X</p>
-        <p class="operators__operator divide">%</p>
+        <p id="add" class="operators__operator">+</p>
+        <p id="subtract" class="operators__operator">-</p>
+        <p id="multiply" class="operators__operator">X</p>
+        <p id="divide" class="operators__operator">%</p>
     </div>
 
     <div class="numbers">
-        <p class="numbers__number 1">1</p>
-        <p class="numbers__number 2">2</p>
-        <p class="numbers__number 3">3</p>
-        <p class="numbers__number 4">4</p>
-        <p class="numbers__number 5">5</p>
-        <p class="numbers__number 6">6</p>
-        <p class="numbers__number 7">7</p>
-        <p class="numbers__number 8">8</p>
-        <p class="numbers__number 9">9</p>
-        <p class="numbers__number 0">0</p>
-        <p class="numbers__number .">.</p>
+        <p id="one" class="numbers__number">1</p>
+        <p id="two" class="numbers__number">2</p>
+        <p id="three" class="numbers__number">3</p>
+        <p id="four" class="numbers__number">4</p>
+        <p id="five" class="numbers__number">5</p>
+        <p id="six" class="numbers__number">6</p>
+        <p id="seven" class="numbers__number">7</p>
+        <p id="eight" class="numbers__number">8</p>
+        <p id="nine" class="numbers__number">9</p>
+        <p id="zero" class="numbers__number">0</p>
+        <p id="decimal" class="numbers__number">.</p>
+        <p id="equal" class="numbers__number">=</p>
     </div>
 
 
     <!-- Link to the javascript file 'calc.js' -->
-    
+    <script src="./calc.js"></script>
+
 </body>
 
 </html>

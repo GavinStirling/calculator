@@ -1,1 +1,14 @@
 // Mixins
+@use "../abstracts/variables" as *;
+
+
+@mixin centerSelf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin setBorder {
+    border: solid $size-border-thickness $color-secondary;
+    border-radius: $size-border-radius;
+}

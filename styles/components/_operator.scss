@@ -1,0 +1,18 @@
+// Setting the style of the operator area and operator icons
+
+// Link to the variable and mixin partial files
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.operators__operator{
+    @include centerSelf();
+    @include setBorder();
+    
+    margin: $size-margin-standard;
+
+    color: $color-font-secondary;
+    background-color: $color-light;
+
+    font-weight: 700;
+
+}

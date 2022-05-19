@@ -1,4 +1,6 @@
 // Setting the body layout of the page
+
+// Link to the variables
 @use "../abstracts/variables" as *;
 
 
@@ -8,6 +10,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    font-family: $primary-font;
+    align-items: center;
+    font-family: $font-primary;
+    background-color: $color-background;
+    color: $color-font;
 }

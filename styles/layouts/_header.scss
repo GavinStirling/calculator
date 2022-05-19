@@ -1,0 +1,17 @@
+// Setting the title of the page
+
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.header {
+    height: 10vh;
+    width: 100%;
+
+    @include centerSelf();
+       
+
+    &__title {
+        text-align: center;
+        font-size: 2em;
+    }
+}

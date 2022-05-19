@@ -1,8 +1,22 @@
 // Sheet consolidating all variables used in project
-//  Linking other style sheets
 
-
+// Colour Variables
+$color-background: #172A3A;
+$color-workarea: #004346;
+$color-font: #FFFFFF;
+$color-font-secondary: #000000;
+$color-light: #AFC2D5;
+$color-secondary: #99F7AB;
 
 //  Font Variables
 
-$primary-font: 'Roboto Condensed', sans-serif;
+$font-primary: 'Roboto Condensed', sans-serif;
+
+// Sizing
+
+$size-width-area: 80%;
+
+$size-margin-standard: 0.5em;
+
+$size-border-thickness: 2px;
+$size-border-radius: 1em;
