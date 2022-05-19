@@ -1,2 +1,11 @@
-@use "./variables" as *;
 
+
+.workarea {
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+
+    &__results {
+        height: 100px;
+    }
+}
