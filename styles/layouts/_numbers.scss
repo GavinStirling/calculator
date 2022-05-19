@@ -1,18 +1,17 @@
-// Setting the style of the numbers area and number icon
+// Setting the style of the numbers area.
 
-//Link to the variable and mixin partial files
+// Link to the variable and mixin partial files.
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
 
 .numbers {
-    //Seeting height and width of the numbers area
+    // Setting height and width of the numbers area.
     width: $size-width-area;
     height: 40vh;
     margin: $size-margin-standard;
 
-    //Seeting the display style of the number icons
+    // Setting the grid display style of the number icons.
     display: grid;
     grid-template: repeat(4,1fr) / repeat(3, 1fr);
-    gap: 0;
 }

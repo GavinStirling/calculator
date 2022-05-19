@@ -1,36 +1,22 @@
-//Styling the work area
+// Styling the work area.
 
-// Link to the variables
+// Link to the variables.
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
 .workarea {
+    // Setting the working area's height, width and margin.
     height: 25vh;
     width: $size-width-area;
     margin: $size-margin-standard;
 
+    // Setting the elements within the working area to be centred in the middle of the container.
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    
 
-
-    &__results {
-        height: 20vh;
-        width: 100%;
-        margin: $size-margin-standard 0;
-
-        @include setBorder();
-    }
-
-    &__clear {
-        @include centerSelf();
-        @include setBorder();
-
-        height: 5vh;
-        padding: $size-margin-standard ;
-        
-        background-color: $color-workarea;
-    }
+    
 }

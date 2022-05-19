@@ -1,13 +1,16 @@
 // Mixins
+
+// Link o the variables partial file.
 @use "../abstracts/variables" as *;
 
-
+// To set the elements within an container/element to be centered.
 @mixin centerSelf {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+// To set a standardised border around an element.
 @mixin setBorder {
     border: solid $size-border-thickness $color-secondary;
     border-radius: $size-border-radius;

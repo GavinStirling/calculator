@@ -1,23 +1,26 @@
 // BASE STYLES
 
-// Resetting the page defaults
+// Resetting the page defaults.
 @use "./base/reset";
 
-// Setting the default style of the web page
+// Setting the default style of the web page.
 @use "./base/body";
 
-// LAYOUTS
+// LAYOUTS AND COMPONENTS
 
-// Setting the style for the title
+// Setting the style for the title.
 @use "./layouts/header";
+@use "./components/title";
 
-// Setting the style for the work and results area
+// Setting the style for the work and results area.
 @use "./layouts/workarea";
+@use "./components/results";
+@use "./components/clear";
 
-// Setting the style for the operator selectors
+// Setting the style for the operator selectors.
 @use "./layouts/operators";
 @use "./components/operator";
 
-// Setting the styles for the number selectors
+// Setting the styles for the number selectors.
 @use "./layouts/numbers";
 @use "./components/number";

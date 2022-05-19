@@ -1,18 +1,20 @@
-// Setting the style of the numbers area and number icon
+// Setting the style of the numbers area and number icon.
 
-//Link to the variable and mixin partial files
+//Link to the variable and mixin partial files.
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
 .numbers__number{
+    // Using mixins to centre the content within the icon and set the standard border.
     @include centerSelf();
     @include setBorder();
 
+    // Setting the margin of the icon
     margin: $size-margin-standard;
 
+    // Setting the colours, increasing the font size and the weight to bold.
     color: $color-font-secondary;
     background-color: $color-light;
-
     font-size: 1em;
     font-weight: 700;
 }

@@ -1,17 +1,22 @@
-// Setting the body layout of the page
+// Setting a default position for all elements in the body layout of the page.
 
-// Link to the variables
+// Link to the variables.
 @use "../abstracts/variables" as *;
 
 
 body {
+    // Setting page height and width.
     height: 100vh;
     width: 100%;
+
+    //Centering all of the elements at the centre and top of the web page.
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    //Setting the default font-family and page colour scheme.
     font-family: $font-primary;
-    background-color: $color-background;
     color: $color-font;
+    background-color: $color-background;
 }

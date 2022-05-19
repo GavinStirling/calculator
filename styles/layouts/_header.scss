@@ -1,17 +1,14 @@
-// Setting the title of the page
+// Setting the layout of the page header.
 
+//Link to the variable and mixin partial files.
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
 .header {
+    // Setting the height and width of the header.
     height: 10vh;
     width: 100%;
 
-    @include centerSelf();
-       
-
-    &__title {
-        text-align: center;
-        font-size: 2em;
-    }
+    // Using a mixin to centre the content within the header.
+    @include centerSelf();  
 }

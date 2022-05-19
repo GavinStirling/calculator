@@ -1,18 +1,16 @@
-// Setting the style of the operator area and operator icons
+// Setting the style of the operator area.
 
-// Link to the variable and mixin partial files
+// Link to the variable and mixin partial files.
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
 .operators {
+    // Setting the height, width and margin.
     height: 10vh;
     width: $size-width-area;
     margin: 0;
 
-    //Seeting the display style of the operator icons
+    // Setting the grid display style of the operator icons.
     display: grid;
     grid-template: repeat(1,1fr) / repeat(4, 1fr);
-    gap: 0;
-
-
 }
