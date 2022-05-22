@@ -5,15 +5,25 @@
 @use "../abstracts/mixins" as *;
 
 // Setting the style of the clear icon.
-.workarea__clear {
-    // Using mixins to centre the content within the icon and set the standard border.
-    @include centerSelf();
-    @include setBorder();
+.clear {
+    
+
+    display: flex;
+    justify-content: space-evenly;
 
     // Setting the height and padding if the button.
     height: 5vh;
-    padding: $size-padding-standard;
+    width: $size-width-area;
     
-    // Setting the background colour specific to working area elements.
-    background-color: $color-workarea;
+
+    &__clear, &__clear-all {
+        // Using mixins to centre the content within the icon and set the standard border.
+        @include setBorder();
+        @include centerSelf();
+
+        // Setting the background colour specific to working area elements.
+        background-color: $color-workarea;
+
+        padding: $size-padding-standard;
+    }
 }

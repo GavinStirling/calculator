@@ -4,7 +4,7 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.numbers__number{
+.numbers__number {
     // Using mixins to centre the content within the icon and set the standard border.
     @include centerSelf();
     @include setBorder();
@@ -17,4 +17,7 @@
     background-color: $color-light;
     font-size: 1em;
     font-weight: 700;
+
+    
 }
+
