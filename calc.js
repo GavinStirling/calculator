@@ -7,7 +7,7 @@ const holdingArea = document.querySelector(".workarea__holding-area");
 // Declaring the buttons as variables.
 const numberButton = document.querySelectorAll(".numbers__number");
 const operatorButton = document.querySelectorAll(".operators__operator")
-const equalsButton = document.querySelector(".operators__operator-equals")''
+const equalsButton = document.querySelector(".operators__operator-equals");
 const clearButton = document.querySelector(".clear__clear");
 const clearAllButton = document.querySelector(".clear__clear-all");
 
