@@ -6,39 +6,23 @@
 
 .workarea {
     @include setBorder();
-    @include centerSelfColumn();
+    @include centerSelf();
+    
     // Setting the working area's height, width and margin.
     height: 25vh;
     width: $size-width-area;
     margin: $size-margin-standard;
 
     // Setting the elements within the working area to be centred in the middle of the container.
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 
     color: $color-font-secondary;
     background-color: $color-workarea;
 
-    &__holding-area {
+}
 
-        @include setBorder();
-        @include centerSelf();
+.buttons {
+    width: 100%;
+    @include centerSelfColumn();
 
-        width: 80%;
-        height: 20%;
-        margin: $size-margin-standard;
-    }
-
-    &__working-area {
-
-        @include setBorder();
-        @include centerSelf();
-
-        width: 80%;
-        height: 70%;
-        margin: $size-margin-standard;
-    }
-        
 }

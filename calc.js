@@ -1,50 +1,50 @@
-// Declaring variables
+// Declaring all variables
+// Declaring calculator object
 
-// Declaring the working and result holding areas as variables.
-const workArea = document.querySelector(".workarea__working-area");
-const holdingArea = document.querySelector(".workarea__holding-area");
-
-// Declaring the buttons as variables.
-const numberButton = document.querySelectorAll(".numbers__number");
-const operatorButton = document.querySelectorAll(".operators__operator")
-const equalsButton = document.querySelector(".operators__operator-equals");
-const clearButton = document.querySelector(".clear__clear");
-const clearAllButton = document.querySelector(".clear__clear-all");
-
-// Decalring functions
-
-// Writing a number to the working area.
-const enterNumber = (event) => {
-    workArea.innerText += event.target.innerText;
+const calculator = {
+    firstNumber: 0,
+    result: '0',
+    waitingForSecondOperator: false,
+    operator: null
 }
 
-const enterOperator = (event) => {
-    holdingArea.innerText += ` ${workArea.innerText} ${event.target.innerText} `;
-    workArea.innerText = "";
-}
+const workArea = document.querySelector(".workarea");
+const operatorButtons = document.querySelector(".operators");
+const numberButtons = document.querySelector(".numbers")
+const clearButtons = document.querySelector(".clear")
 
-// Clearing the working area.
-const clearWorkArea = () => {
-    workArea.innerText = "";
-}
+const setDisplay = (() => {
+    workArea.innerText = calculator.result;
+})
 
-// Clearing both the working and holding areas.
-const clearAll = () => {
-    workArea.innerText = "";
-    holdingArea.innerText = "";
-}
+const handleClick = ((event) => {
+    if (!event.target.matches('button')){
+        return;
+    }
+    if (event.target.classList.contains("operators__operator")){
+        console.log("operator ", event.target.value);
+        return;
+    }
+    if (event.target.classList.contains("numbers__number")){
+        console.log("number ", parseFloat(event.target.innerText));
+        return;
+    }
+    if (event.target.classList.contains("clear__clear")){
+        console.log("clear ", event.target.innerText);
+        return;
+    }
+    if (event.target.classList.contains("numbers__decimal")){
+        console.log("decimal ", event.target.innerText);
+        return;
+    }
+    
+})
 
-// Event listeners
+operatorButtons.addEventListener("click", handleClick);
+numberButtons.addEventListener("click", handleClick);
+clearButtons.addEventListener("click", handleClick);
 
-// Writing a number to the working area.
-numberButton.forEach(number => {
-    number.addEventListener("click", enterNumber); 
-});
 
-// 
-operatorButton.forEach(operator => {
-    operator.addEventListener("click", enterOperator); 
-});
 
-clearButton.addEventListener("click", clearWorkArea);
-clearAllButton.addEventListener("click", clearAll);
+setDisplay();
+

@@ -23,40 +23,41 @@
     <!-- Workarea container holding the results psoition and clear button -->
     <div class="workarea">
 
-        <div class="workarea__holding-area"></div>
-        <div class="workarea__working-area"></div>
-
     </div>
 
-    <div class="clear">
+    <div class="buttons">
 
-        <p class="clear__clear">Clear</p>
-        <p class="clear__clear-all">Clear All</p>
+        <div class="clear">
 
-    </div>
+            <button class="clear__clear">Clear</button>
+            <button class="clear__clear">Clear All</button>
 
-    <!-- Operators container holding all of the elements used as the operator icons -->
-    <div class="operators">
-        <p id="add" class="operators__operator">+</p>
-        <p id="subtract" class="operators__operator">-</p>
-        <p id="multiply" class="operators__operator">X</p>
-        <p id="divide" class="operators__operator">%</p>
-    </div>
+        </div>
 
-    <!-- Number container holding all of the elements used as the number icons -->
-    <div class="numbers">
-        <p id="one" class="numbers__number">1</p>
-        <p id="two" class="numbers__number">2</p>
-        <p id="three" class="numbers__number">3</p>
-        <p id="four" class="numbers__number">4</p>
-        <p id="five" class="numbers__number">5</p>
-        <p id="six" class="numbers__number">6</p>
-        <p id="seven" class="numbers__number">7</p>
-        <p id="eight" class="numbers__number">8</p>
-        <p id="nine" class="numbers__number">9</p>
-        <p id="zero" class="numbers__number">0</p>
-        <p id="decimal" class="numbers__number">.</p>
-        <p id="equal" class="operators__operator-equals">=</p>
+        <!-- Operators container holding all of the elements used as the operator icons -->
+        <div class="operators">
+            <button id="add" value="+" class="operators__operator">+</button>
+            <button id="subtract" value="-" class="operators__operator">-</button>
+            <button id="multiply" value="*" class="operators__operator">&times;</button>
+            <button id="divide" value="/" class="operators__operator">%</button>
+            <button id="equal" value="=" class="operators__operator equals">=</button>
+        </div>
+
+        <!-- Number container holding all of the elements used as the number icons -->
+        <div class="numbers">
+            <button id="one" class="numbers__number">1</button>
+            <button id="two" class="numbers__number">2</button>
+            <button id="three" class="numbers__number">3</button>
+            <button id="four" class="numbers__number">4</button>
+            <button id="five" class="numbers__number">5</button>
+            <button id="six" class="numbers__number">6</button>
+            <button id="seven" class="numbers__number">7</button>
+            <button id="eight" class="numbers__number">8</button>
+            <button id="nine" class="numbers__number">9</button>
+            <button id="zero" class="numbers__number">0</button>
+            <button id="decimal" value="." class="numbers__decimal">.</button>
+            
+        </div>
     </div>
 
     <!-- Link to the javascript file 'calc.js' -->

@@ -17,18 +17,3 @@
     background-color: $color-light;
     font-weight: 700;
 }
-
-.operators__operator-equals{
-    // Using mixins to centre the content within the icon and set the standard border.
-    @include centerSelf();
-    @include setBorder();
-
-    // Setting the margin of the icon
-    margin: $size-margin-standard;
-
-    // Setting the colours, increasing the font size and the weight to bold.
-    color: $color-font-secondary;
-    background-color: $color-light;
-    font-size: 1em;
-    font-weight: 700;
-}
