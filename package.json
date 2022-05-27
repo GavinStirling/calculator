@@ -1,0 +1,23 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "My _nology calculator",
+  "main": "calc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:cypress": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GavinStirling/calculator.git"
+  },
+  "author": "Gavin Stirling",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GavinStirling/calculator/issues"
+  },
+  "homepage": "https://github.com/GavinStirling/calculator#readme",
+  "devDependencies": {
+    "cypress": "^9.7.0"
+  }
+}

@@ -48,16 +48,17 @@ const handleDecimal = (decimal) => {
   if (calculator.waitingForSecondNumber) {
     calculator.result = "0.";
     calculator.waitingForSecondNumber = false;
-    return
+    return;
   }
-  
-    if (!calculator.result.includes(decimal)) {
+
+  if (!calculator.result.includes(decimal)) {
     calculator.result += decimal;
   }
 };
 
 const handleOperator = (operInput) => {
   const input = parseFloat(calculator.result);
+
 
   if (calculator.firstNumber === 0 && !isNaN(input)) {
     calculator.firstNumber = input;
@@ -67,8 +68,12 @@ const handleOperator = (operInput) => {
       input,
       calculator.operator
     );
-    calculator.result = `${result.toFixed(2)}`;
-    calculator.firstNumber = result;
+    if (result === Infinity) {
+      calculator.result = `Error, cannot divide by zero. Clear all to begin again!`;
+    } else {
+      calculator.result = `${result.toFixed(2)}`;
+      calculator.firstNumber = result;
+    }
   }
 
   calculator.waitingForSecondNumber = true;
@@ -76,7 +81,6 @@ const handleOperator = (operInput) => {
 };
 
 const calculate = (firstNumber, secondNumber, operator) => {
-    
   if (operator === "+") {
     return firstNumber + secondNumber;
   } else if (operator === "-") {
@@ -84,11 +88,7 @@ const calculate = (firstNumber, secondNumber, operator) => {
   } else if (operator === "*") {
     return firstNumber * secondNumber;
   } else if (operator === "/") {
-    if (secondNumber === 0) {
-      return "Error, cannot divide by zero.";
-    } else {
-      return firstNumber / secondNumber;
-    }
+    return firstNumber / secondNumber;
   } else if (operator === "=") {
     return firstNumber + secondNumber;
   }
@@ -100,11 +100,11 @@ const handleClick = (event) => {
   }
   if (event.target.classList.contains("operators__operator")) {
     const operator = event.target.value;
-    if (operator === "="){
-        handleOperator(operator);
-        calculator.operator = null;
+    if (operator === "=") {
+      handleOperator(operator);
+      calculator.operator = null;
     } else {
-        handleOperator(operator);
+      handleOperator(operator);
     }
   }
   if (event.target.classList.contains("numbers__number")) {
